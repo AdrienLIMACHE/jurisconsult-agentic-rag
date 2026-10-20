@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+body {
+  background-color: #FBFBFA;
+  color: #111317;
+  letter-spacing: -0.011em;
+}
+
+/* Hairline scrollbars in muted paper tone */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #DFDFD8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C7CBD4;
+}
+
+/* Legal text typography */
+.font-serif-legal {
+  font-family: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
+  font-feature-settings: 'cv01' on, 'cv02' on;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle docket texture */
+.dossier-border {
+  border: 1px solid #EAEAE4;
+}
+.dossier-border-b {
+  border-bottom: 1px solid #EAEAE4;
+}
+
