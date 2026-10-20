@@ -1,0 +1,77 @@
+# ==============================================================================
+# .gitignore — JurisConsult AI (TP3 Agentic RAG Jurisprudence)
+# ==============================================================================
+
+# --- Dossiers et fichiers exclus explicitement (docs, tests, notes, bugs, markdown sauf README.md) ---
+docs/
+test/
+tests/
+note/
+notes/
+*note*
+*bug*
+bug.txt
+*.pdf
+*.md
+!README.md
+backend/scripts/test_*.py
+backend/scripts/benchmark_*.py
+
+# --- Datasets lourds & Bases vectorielles (téléchargés/générés via les scripts du README) ---
+antoinejeannot_jurisprudence/
+chroma_db/
+data/chroma_db/
+data/*.parquet
+data/*.pkl
+
+# --- Python / Backend ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Environnements virtuels ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Frontend React / Vite ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Fichiers d'environnement, logs & temporaires ---
+.env
+.env.*
+*.log
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
