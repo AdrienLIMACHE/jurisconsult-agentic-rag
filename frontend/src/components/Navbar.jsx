@@ -20,8 +20,8 @@ export default function Navbar({ onRefreshRandom, loading }) {
                 TJ Paris
               </span>
             </div>
-            <p className="text-[11px] text-ink-400">
-              Intelligence Jurisprudentielle • 5 000 Décisions
+            <p className="text-[11px] font-medium text-ink-600">
+              Fait par Limache Adrien et Anton Nelcon Steve
             </p>
           </div>
         </div>
